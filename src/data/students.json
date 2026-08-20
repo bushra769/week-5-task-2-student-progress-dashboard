@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Bushra Saeed",
+    "completedCourses": 6,
+    "pendingCourses": 4,
+    "progress": 60
+  },
+  {
+    "id": 2,
+    "name": "Ayesha Khan",
+    "completedCourses": 8,
+    "pendingCourses": 2,
+    "progress": 80
+  },
+  {
+    "id": 3,
+    "name": "Fatima Ali",
+    "completedCourses": 5,
+    "pendingCourses": 5,
+    "progress": 50
+  }
+]
