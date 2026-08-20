@@ -1,6 +1,6 @@
 interface SummaryCardProps {
   title: string;
-  value: string | number;
+  value: number;
   icon: string;
 }
 

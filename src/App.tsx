@@ -1,16 +1,16 @@
-import SummaryCard from "./components/SummaryCard";
-import StudentCard from "./components/StudentCard";
 import students from "./data/students.json";
+import StudentCard from "./components/StudentCard";
+import SummaryCard from "./components/SummaryCard";
 
 function App() {
   const totalStudents = students.length;
 
-  const completedCourses = students.reduce(
+  const totalCompleted = students.reduce(
     (total, student) => total + student.completedCourses,
     0
   );
 
-  const pendingCourses = students.reduce(
+  const totalPending = students.reduce(
     (total, student) => total + student.pendingCourses,
     0
   );
@@ -22,39 +22,40 @@ function App() {
 
   return (
     <div className="dashboard">
-      <header className="dashboard-header">
+      <header className="header">
         <div>
-          <p className="welcome">Welcome back 👋</p>
+          <p className="small-title">IT CLUB • SUMMER INTERNSHIP 2026</p>
           <h1>Student Progress Dashboard</h1>
           <p className="subtitle">
-            Track your learning progress and course completion.
+            Track student learning progress, completed courses and pending
+            courses.
           </p>
         </div>
       </header>
 
-      <main className="dashboard-content">
+      <main className="container">
         <section className="summary-grid">
           <SummaryCard
             title="Total Students"
             value={totalStudents}
-            icon="👨‍🎓"
+            icon="👩‍🎓"
           />
 
           <SummaryCard
             title="Completed Courses"
-            value={completedCourses}
+            value={totalCompleted}
             icon="✅"
           />
 
           <SummaryCard
             title="Pending Courses"
-            value={pendingCourses}
+            value={totalPending}
             icon="📚"
           />
 
           <SummaryCard
             title="Average Progress"
-            value={`${averageProgress}%`}
+            value={averageProgress}
             icon="📈"
           />
         </section>
@@ -63,7 +64,7 @@ function App() {
           <div className="section-heading">
             <div>
               <h2>Students</h2>
-              <p>View individual learning progress</p>
+              <p>Learning progress of all students</p>
             </div>
           </div>
 

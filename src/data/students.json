@@ -1,23 +1,30 @@
 [
   {
     "id": 1,
-    "name": "Bushra Saeed",
-    "completedCourses": 6,
-    "pendingCourses": 4,
-    "progress": 60
-  },
-  {
-    "id": 2,
     "name": "Ayesha Khan",
     "completedCourses": 8,
     "pendingCourses": 2,
     "progress": 80
   },
   {
+    "id": 2,
+    "name": "Bushra Saeed",
+    "completedCourses": 7,
+    "pendingCourses": 3,
+    "progress": 70
+  },
+  {
     "id": 3,
-    "name": "Fatima Ali",
-    "completedCourses": 5,
-    "pendingCourses": 5,
-    "progress": 50
+    "name": "Fatima Noor",
+    "completedCourses": 9,
+    "pendingCourses": 1,
+    "progress": 90
+  },
+  {
+    "id": 4,
+    "name": "Hina Ahmed",
+    "completedCourses": 6,
+    "pendingCourses": 4,
+    "progress": 60
   }
 ]

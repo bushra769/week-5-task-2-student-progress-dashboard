@@ -4,13 +4,13 @@ interface ProgressBarProps {
 
 function ProgressBar({ progress }: ProgressBarProps) {
   return (
-    <div className="progress-wrapper">
-      <div className="progress-info">
-        <span>Progress</span>
-        <span>{progress}%</span>
+    <div className="progress-container">
+      <div className="progress-header">
+        <span>Overall Progress</span>
+        <strong>{progress}%</strong>
       </div>
 
-      <div className="progress-track">
+      <div className="progress-bar">
         <div
           className="progress-fill"
           style={{ width: `${progress}%` }}

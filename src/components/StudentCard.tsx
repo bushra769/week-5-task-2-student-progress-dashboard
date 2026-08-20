@@ -1,5 +1,3 @@
-import ProgressBar from "./ProgressBar";
-
 interface Student {
   id: number;
   name: string;
@@ -15,30 +13,40 @@ interface StudentCardProps {
 function StudentCard({ student }: StudentCardProps) {
   return (
     <div className="student-card">
-      <div className="student-header">
-        <div className="student-avatar">
+      <div className="student-top">
+        <div className="avatar">
           {student.name.charAt(0)}
         </div>
 
         <div>
           <h3>{student.name}</h3>
-          <p>Student</p>
+          <p>Student ID: #{student.id}</p>
         </div>
       </div>
 
-      <div className="course-stats">
-        <div className="course-stat completed">
-          <span>Completed</span>
+      <div className="course-info">
+        <div>
+          <span>Completed Courses</span>
           <strong>{student.completedCourses}</strong>
         </div>
 
-        <div className="course-stat pending">
-          <span>Pending</span>
+        <div>
+          <span>Pending Courses</span>
           <strong>{student.pendingCourses}</strong>
         </div>
       </div>
 
-      <ProgressBar progress={student.progress} />
+      <div className="progress-header">
+        <span>Overall Progress</span>
+        <strong>{student.progress}%</strong>
+      </div>
+
+      <div className="progress-bar">
+        <div
+          className="progress-fill"
+          style={{ width: `${student.progress}%` }}
+        ></div>
+      </div>
     </div>
   );
 }
