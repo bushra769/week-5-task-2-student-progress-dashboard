@@ -1,4 +1,6 @@
 ![image alt](https://github.com/bushra769/week-5-task-2-student-progress-dashboard/blob/18da95bd43f785de4ecbc3dd921b5699df499d51/week-5-task-2.png)
+
+![image alt](https://github.com/bushra769/week-5-task-2-student-progress-dashboard/blob/fa424e645c157084e3a0ec8fadf471fc159a84fd/week-5-task-2.2png.png)
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
